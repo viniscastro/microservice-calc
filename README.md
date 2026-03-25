@@ -4,12 +4,18 @@
 
 
 ## Pré-Requisitos: 
-| Instalação do [Docker](https://docs.docker.com/engine/install)
+1. Instalação do [Docker](https://docs.docker.com/engine/install)
 
-| Instalação do [Docker Compose](https://docs.docker.com/compose/install/)
+2. Instalação do [Docker Compose](https://docs.docker.com/compose/install/)
+```bash
+sudo apt-get update
+sudo apt-get install docker-compose docker unzip
 
+```
 
-O passo a passo segue o que é apresentado tutorial apresentado em: [Building a Python scalable Flask application using docker-compose and Nginx load balancer
+## Utilização do projeto
+
+O passo a passo segue o que é apresentado no tutorial apresentado em: [Building a Python scalable Flask application using docker-compose and Nginx load balancer
 ](https://www.linkedin.com/pulse/building-python-scalable-flask-application-using-nginx-itay-melamed/)
 
 Algumas alterações foram realizadas para que o projeto ficasse com as mesmas funcionalidades das apresentadas nos projetos de arquitetura serverless e monolítica (API de soma, sub e calc). Para fins de discussão sobre a funcionalidade de *Load Balancing*, o projeto "ping" apresentado no tutorial foi mantido.
