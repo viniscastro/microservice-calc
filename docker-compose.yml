@@ -4,14 +4,20 @@ services:
     ping:
         build: ping
 
-    calc:
-        build: calc
-
     soma:
         build: soma
 
     sub:
         build: sub
+
+    mult-1:
+        build: mult
+
+    mult-2:
+        build: mult
+
+    mult-3:
+        build: mult
 
     nginx:
         container_name: nginx
@@ -20,6 +26,8 @@ services:
             - 8080:80
         depends_on:
            - ping
-           - calc
            - soma
            - sub
+           - mult-1
+           - mult-2
+           - mult-3
